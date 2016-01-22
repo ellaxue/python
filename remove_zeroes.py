@@ -22,10 +22,4 @@ class Solution(object):
 solution = Solution()
 nums = [1,2,0,0,0,2,3,4,5,0,0,9,9]
 solution.moveZeroes(nums)
-for value in nums:
-    print value
-    
-print 'call print function'
-    
-    
 solution.printList(nums)
