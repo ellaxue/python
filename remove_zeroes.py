@@ -5,7 +5,8 @@ class Solution(object):
         :rtype: void Do not return anything, modify nums in-place instead.
         """
         pos_A = 0
-        for index in range (len(nums)-1):
+        length = len(nums)-1
+        for index in range (length):
             if nums[index] != 0:
                 pos_A += 1
             else:
