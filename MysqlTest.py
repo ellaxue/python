@@ -17,7 +17,7 @@ sql = """LOAD DATA LOCAL INFILE 'input.txt' INTO TABLE EMPLOYEE
 try:
    # Execute the SQL command
    cursor.execute(sql)
-   # Commitchanges in the database
+   # Commit changes in the database
    db.commit()
 except:
 	print 'fail to insert'
