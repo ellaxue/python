@@ -7,10 +7,8 @@ cursor.execute("DROP TABLE IF EXISTS EMPLOYEE")
 sql = """CREATE TABLE EMPLOYEE(
 	FIRST_NAME CHAR(20) NOT NULL, LAST_NAME CHAR(20), AGE INT, SEX CHAR(1), INCOME FLOAT)"""
 
-
 cursor.execute(sql)
 print 'created table EMPLOYEE'
-
  
 # Prepare SQL query to IMPORT data file into the database.
 sql = """LOAD DATA LOCAL INFILE 'input.txt' INTO TABLE EMPLOYEE
@@ -19,7 +17,7 @@ sql = """LOAD DATA LOCAL INFILE 'input.txt' INTO TABLE EMPLOYEE
 try:
    # Execute the SQL command
    cursor.execute(sql)
-   # Commit your changes in the database
+   # Commitchanges in the database
    db.commit()
 except:
 	print 'fail to insert'
